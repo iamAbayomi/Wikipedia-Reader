@@ -1,5 +1,10 @@
 package com.appdot.io.wikipediareader.model
 
-class WikiThumbnail {
+import com.google.gson.annotations.Expose
+import com.google.gson.annotations.SerializedName
 
-}
+class WikiThumbnail (
+ @SerializedName("source")
+ @Expose
+ val source : String
+)

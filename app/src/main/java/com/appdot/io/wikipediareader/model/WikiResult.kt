@@ -1,8 +1,11 @@
 package com.appdot.io.wikipediareader.model
 
+import androidx.navigation.Navigator
+import com.google.gson.annotations.Expose
+import com.google.gson.annotations.SerializedName
+
 class WikiResult (
-    var pageid: Int?,
-    var title: String?,
-    var fullurl: String?,
-    var thumbnail: WikiThumbnail?
+    @SerializedName("pages")
+    @Expose
+    val pages: ArrayList<WikiPage> = ArrayList()
 )
